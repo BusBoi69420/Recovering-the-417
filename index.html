@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recovering the 417 | Drone Recovery Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Recovering the 417 Logo" class="nav-logo" />
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="autel-evo2.webp" alt="Autel EVO II Dual 640T" class="hero-drone-img" />
+    </div>
+    <div class="hero-content">
+      <h1>Recovering the 417</h1>
+      <p>Professional aerial search, recovery, and thermal imaging solutions across the 417 region.</p>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>Search & Recovery</h3>
+        <p>Rapid aerial search operations to locate missing persons, animals, or objects across large or difficult terrain.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌡️</div>
+        <h3>Thermal Imaging</h3>
+        <p>High-resolution thermal cameras detect heat signatures day or night, in any weather condition.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏗️</div>
+        <h3>Infrastructure Inspection</h3>
+        <p>Safe, efficient inspection of rooftops, towers, pipelines, and structures using drone technology.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📸</div>
+        <h3>Aerial Photography</h3>
+        <p>Stunning 4K aerial footage and photography for real estate, events, and marketing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚨</div>
+        <h3>Emergency Response</h3>
+        <p>On-call support for first responders, fire departments, and law enforcement agencies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section alt">
+    <div class="about-grid">
+      <div>
+        <h2>About Us</h2>
+        <p>Recovering the 417 is a locally operated drone services company serving the Springfield, Missouri area and surrounding communities. Our FAA-certified pilots bring years of experience in aerial operations, thermal imaging, and emergency response support.</p>
+        <p>We are committed to fast response times, professional results, and working closely with clients to meet their specific needs — whether it's a missing person search or a routine property inspection.</p>
+        <ul class="highlights">
+          <li>✅ FAA Part 107 Certified Pilots</li>
+          <li>✅ Thermal & RGB Imaging Capabilities</li>
+          <li>✅ 24/7 Emergency Availability</li>
+          <li>✅ Fully Insured Operations</li>
+        </ul>
+      </div>
+      <div class="about-visual">
+        <p class="tagline">"Eyes in the sky when it matters most."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p class="section-sub">Ready to get started? Reach out for a free consultation or quote.</p>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+      </div>
+      <input type="tel" placeholder="Phone Number (optional)" />
+      <select>
+        <option value="" disabled selected>Select a Service</option>
+        <option>Search & Recovery</option>
+        <option>Thermal Imaging</option>
+        <option>Infrastructure Inspection</option>
+        <option>Aerial Photography</option>
+        <option>Emergency Response</option>
+        <option>Other</option>
+      </select>
+      <textarea placeholder="Describe your project or request..." rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-success" id="form-success">✅ Message sent! We'll be in touch shortly.</p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Recovering the 417 &mdash; Drone Recovery Services &mdash; Springfield, MO</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f28713" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00111f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="motorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f28713" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f28713" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="blur6">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a3a4a"/>
+      <stop offset="100%" stop-color="#0d1e2c"/>
+    </linearGradient>
+    <linearGradient id="armGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e2e3e"/>
+      <stop offset="100%" stop-color="#0a1825"/>
+    </linearGradient>
+    <linearGradient id="propGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3a4a5a" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#5a6a7a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3a4a5a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="camGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2a3a"/>
+      <stop offset="100%" stop-color="#050f18"/>
+    </linearGradient>
+    <linearGradient id="thermalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f28713"/>
+      <stop offset="100%" stop-color="#c06000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background glow -->
+  <ellipse cx="400" cy="260" rx="320" ry="200" fill="url(#glow)"/>
+
+  <!-- ===================== ARMS ===================== -->
+  <!-- Front-left arm -->
+  <rect x="248" y="218" width="110" height="14" rx="7" fill="url(#armGrad)" transform="rotate(-38 303 225)" filter="url(#shadow)"/>
+  <!-- Front-right arm -->
+  <rect x="442" y="218" width="110" height="14" rx="7" fill="url(#armGrad)" transform="rotate(38 497 225)" filter="url(#shadow)"/>
+  <!-- Rear-left arm -->
+  <rect x="248" y="268" width="110" height="14" rx="7" fill="url(#armGrad)" transform="rotate(38 303 275)" filter="url(#shadow)"/>
+  <!-- Rear-right arm -->
+  <rect x="442" y="268" width="110" height="14" rx="7" fill="url(#armGrad)" transform="rotate(-38 497 275)" filter="url(#shadow)"/>
+
+  <!-- ===================== MOTOR HUBS ===================== -->
+  <!-- Front-left motor -->
+  <circle cx="210" cy="188" r="22" fill="#0d1e2c" stroke="#f28713" stroke-width="2.5" filter="url(#shadow)"/>
+  <circle cx="210" cy="188" r="13" fill="#1a2e40"/>
+  <circle cx="210" cy="188" r="5" fill="#f28713"/>
+  <!-- Front-right motor -->
+  <circle cx="590" cy="188" r="22" fill="#0d1e2c" stroke="#f28713" stroke-width="2.5" filter="url(#shadow)"/>
+  <circle cx="590" cy="188" r="13" fill="#1a2e40"/>
+  <circle cx="590" cy="188" r="5" fill="#f28713"/>
+  <!-- Rear-left motor -->
+  <circle cx="210" cy="312" r="22" fill="#0d1e2c" stroke="#f28713" stroke-width="2.5" filter="url(#shadow)"/>
+  <circle cx="210" cy="312" r="13" fill="#1a2e40"/>
+  <circle cx="210" cy="312" r="5" fill="#f28713"/>
+  <!-- Rear-right motor -->
+  <circle cx="590" cy="312" r="22" fill="#0d1e2c" stroke="#f28713" stroke-width="2.5" filter="url(#shadow)"/>
+  <circle cx="590" cy="312" r="13" fill="#1a2e40"/>
+  <circle cx="590" cy="312" r="5" fill="#f28713"/>
+
+  <!-- ===================== PROPELLERS ===================== -->
+  <!-- Front-left props -->
+  <ellipse cx="210" cy="188" rx="68" ry="7" fill="url(#propGrad)" opacity="0.75"/>
+  <ellipse cx="210" cy="188" rx="7" ry="68" fill="url(#propGrad)" opacity="0.75" transform="rotate(45 210 188)"/>
+  <!-- Front-right props -->
+  <ellipse cx="590" cy="188" rx="68" ry="7" fill="url(#propGrad)" opacity="0.75"/>
+  <ellipse cx="590" cy="188" rx="7" ry="68" fill="url(#propGrad)" opacity="0.75" transform="rotate(45 590 188)"/>
+  <!-- Rear-left props -->
+  <ellipse cx="210" cy="312" rx="68" ry="7" fill="url(#propGrad)" opacity="0.75"/>
+  <ellipse cx="210" cy="312" rx="7" ry="68" fill="url(#propGrad)" opacity="0.75" transform="rotate(45 210 312)"/>
+  <!-- Rear-right props -->
+  <ellipse cx="590" cy="312" rx="68" ry="7" fill="url(#propGrad)" opacity="0.75"/>
+  <ellipse cx="590" cy="312" rx="7" ry="68" fill="url(#propGrad)" opacity="0.75" transform="rotate(45 590 312)"/>
+
+  <!-- Motor glow rings -->
+  <circle cx="210" cy="188" r="40" fill="url(#motorGlow)" filter="url(#blur6)"/>
+  <circle cx="590" cy="188" r="40" fill="url(#motorGlow)" filter="url(#blur6)"/>
+  <circle cx="210" cy="312" r="40" fill="url(#motorGlow)" filter="url(#blur6)"/>
+  <circle cx="590" cy="312" r="40" fill="url(#motorGlow)" filter="url(#blur6)"/>
+
+  <!-- ===================== MAIN BODY ===================== -->
+  <rect x="310" y="215" width="180" height="70" rx="18" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+  <!-- Body top panel -->
+  <rect x="318" y="220" width="164" height="28" rx="10" fill="#1e3045" opacity="0.7"/>
+  <!-- Orange accent stripe -->
+  <rect x="310" y="238" width="180" height="5" rx="2" fill="#f28713" opacity="0.85"/>
+  <!-- Body detail lines -->
+  <line x1="370" y1="222" x2="370" y2="248" stroke="#0a1825" stroke-width="1.5" opacity="0.6"/>
+  <line x1="430" y1="222" x2="430" y2="248" stroke="#0a1825" stroke-width="1.5" opacity="0.6"/>
+  <!-- LED indicator -->
+  <circle cx="400" cy="222" r="4" fill="#f28713" filter="url(#blur2)"/>
+  <circle cx="400" cy="222" r="2.5" fill="#ffcc66"/>
+  <!-- Autel logo area -->
+  <rect x="375" y="252" width="50" height="16" rx="4" fill="#0a1825"/>
+  <text x="400" y="264" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#f28713">AUTEL</text>
+
+  <!-- ===================== LANDING GEAR ===================== -->
+  <!-- Left strut -->
+  <line x1="345" y1="285" x2="335" y2="320" stroke="#1a2e40" stroke-width="5" stroke-linecap="round"/>
+  <line x1="315" y1="320" x2="360" y2="320" stroke="#1a2e40" stroke-width="5" stroke-linecap="round"/>
+  <!-- Right strut -->
+  <line x1="455" y1="285" x2="465" y2="320" stroke="#1a2e40" stroke-width="5" stroke-linecap="round"/>
+  <line x1="440" y1="320" x2="485" y2="320" stroke="#1a2e40" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- ===================== DUAL CAMERA GIMBAL ===================== -->
+  <!-- Gimbal mount -->
+  <rect x="362" y="285" width="76" height="18" rx="6" fill="#0d1e2c" stroke="#2a3a4a" stroke-width="1.5"/>
+  <!-- Gimbal arm -->
+  <rect x="385" y="300" width="30" height="10" rx="4" fill="#0a1825"/>
+
+  <!-- Dual camera housing -->
+  <rect x="358" y="308" width="84" height="46" rx="10" fill="url(#camGrad)" stroke="#1e3045" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- RGB camera lens (left) -->
+  <circle cx="382" cy="331" r="16" fill="#050f18" stroke="#2a3a4a" stroke-width="2"/>
+  <circle cx="382" cy="331" r="11" fill="#0a1520"/>
+  <circle cx="382" cy="331" r="7" fill="#0d1e2c"/>
+  <circle cx="382" cy="331" r="4" fill="#1a2e40"/>
+  <circle cx="379" cy="328" r="1.5" fill="#4a6a8a" opacity="0.8"/>
+
+  <!-- Thermal camera lens (right) -->
+  <circle cx="418" cy="331" r="16" fill="#1a0800" stroke="url(#thermalGrad)" stroke-width="2"/>
+  <circle cx="418" cy="331" r="11" fill="#2a1000"/>
+  <circle cx="418" cy="331" r="7" fill="#3a1800"/>
+  <circle cx="418" cy="331" r="4" fill="#f28713" opacity="0.4"/>
+  <circle cx="415" cy="328" r="1.5" fill="#ffaa44" opacity="0.9"/>
+  <!-- Thermal glow -->
+  <circle cx="418" cy="331" r="18" fill="#f28713" opacity="0.08" filter="url(#blur6)"/>
+
+  <!-- Camera label -->
+  <text x="382" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="5.5" fill="#8a9baa">RGB</text>
+  <text x="418" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="5.5" fill="#f28713">640T</text>
+
+  <!-- Divider between cameras -->
+  <line x1="400" y1="312" x2="400" y2="350" stroke="#1e3045" stroke-width="1.5"/>
+
+  <!-- ===================== LABELS ===================== -->
+  <text x="400" y="400" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#8a9baa" letter-spacing="2">AUTEL EVO II DUAL 640T</text>
+
+  <!-- Thermal scan lines (decorative) -->
+  <line x1="340" y1="420" x2="460" y2="420" stroke="#f28713" stroke-width="0.5" opacity="0.3"/>
+  <line x1="330" y1="425" x2="470" y2="425" stroke="#f28713" stroke-width="0.5" opacity="0.2"/>
+  <line x1="350" y1="430" x2="450" y2="430" stroke="#f28713" stroke-width="0.5" opacity="0.1"/>
+</svg>
