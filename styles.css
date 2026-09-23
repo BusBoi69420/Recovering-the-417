@@ -250,6 +250,20 @@ h2 {
 
 .contact-phone a:hover { color: var(--accent2); }
 
+.facebook-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.facebook-link:hover { opacity: 0.8; }
+
 /* CONTACT FORM */
 .contact-form {
   display: flex;
